@@ -9,12 +9,14 @@ public class PointsCounter : MonoBehaviour
     void Start()
     {
         RefreshText(); // załadowanie na początku gry liczby punktów
+        SavePoints(); // resetowanie punktów na początku rozgrywki
     }
 
     public void IncrementPoints()// automatyczna inkrementacja ilości punktów
     {
         Points++; // zwiększanie punktó
         RefreshText(); // wywołanie funkcji odświeżającej
+        SavePoints(); // zapisanie punktów
     }
 
     public void RefreshText()// odświeżanie tekstu
@@ -22,4 +24,8 @@ public class PointsCounter : MonoBehaviour
         GetComponent<Text>().text = Points.ToString() + " points";// pobranie komponentu renderującego tekst
     }
 
+    void SavePoints()// zapisywanie zdobytych punktów na koniec rozgrywki
+    {
+        PlayerPrefs.SetInt("current_points", Points);
+    }
 }
