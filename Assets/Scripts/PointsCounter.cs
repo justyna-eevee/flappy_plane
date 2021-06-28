@@ -14,7 +14,7 @@ public class PointsCounter : MonoBehaviour
 
     public void IncrementPoints()// automatyczna inkrementacja ilości punktów
     {
-        Points++; // zwiększanie punktó
+        Points++; // zwiększanie punktów
         RefreshText(); // wywołanie funkcji odświeżającej
         SavePoints(); // zapisanie punktów
     }

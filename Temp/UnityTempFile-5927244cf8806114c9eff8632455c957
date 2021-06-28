@@ -288,8 +288,9 @@
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
 Assets\Scripts\CameraMovement.cs
+Assets\Scripts\ChangeSceneWhenClicked.cs
+Assets\Scripts\GameOverScore.cs
 Assets\Scripts\GameoverWhenHit.cs
-Assets\Scripts\NewBehaviourScript.cs
 Assets\Scripts\PlaneMovement.cs
 Assets\Scripts\PlaneRandomColor.cs
 Assets\Scripts\PointsCounter.cs
