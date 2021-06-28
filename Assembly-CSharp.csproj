@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\PointsCounter.cs" />
     <Compile Include="Assets\Scripts\SpriteChanger.cs" />
     <Compile Include="Assets\Scripts\Star.cs" />
+    <Compile Include="Assets\Scripts\TerrainGenerator.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Justyna/Desktop/FLAPPY PLANE/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
