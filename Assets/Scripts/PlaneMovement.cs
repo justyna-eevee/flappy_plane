@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // skrypt odpowiedzialny za przesuwanie samolotu
 // samolot zawsze będzie zwrócony w prawą stronę i  w prawą stronę będzie się poruszał 
@@ -31,6 +32,15 @@ public class PlaneMovement : MonoBehaviour
         // wartość wektora będzie odpowiadała szybkości samolotu
         // funkcja ta wykonuje się co klatkę dlatego samolot będzie poruszać się bardzo szybko, aby znormalizować szybokość ruchu
         // należy pomnożyć wektor razy Time.deltaTime
+
+        
+        if (transform.position.y > 2f)
+        // pobieranie aktualnej pozycji samolotu
+        // wyciągnięcie komponentu y (związanego z wysokością) z pozycji samolotu
+        // sprawdzenie czy wyskość nie jest zbyt duża
+        {
+            SceneManager.LoadScene("GameoverScene"); // jeśli jest to kończymy grę
+        }
 
     }
 }

@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\ChangeSceneWhenClicked.cs" />
     <Compile Include="Assets\Scripts\GameOverScore.cs" />
     <Compile Include="Assets\Scripts\GameoverWhenHit.cs" />
+    <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\PlaneMovement.cs" />
     <Compile Include="Assets\Scripts\PlaneRandomColor.cs" />
     <Compile Include="Assets\Scripts\PointsCounter.cs" />
